@@ -1,14 +1,13 @@
 import { Notepad } from "phosphor-react";
 import styles from "./TaskList.module.css";
 import { NewTask } from "./NewTask";
+import { Task } from "./Task";
 
 export function TaskList(){
     const tasks: any[] = [];
     return(
         <section className={styles.wrapper}>
-            {/* <div className={styles.newTask}>
-                <NewTask />
-            </div> */}
+            <NewTask />
             <div className={styles.tasks_status}>
                 <div>
                     <strong className={styles.created_tasks}>Tarefas criadas</strong>
@@ -19,7 +18,7 @@ export function TaskList(){
                     <span className={styles.tasks_count}>0</span>
                 </div>
             </div>
-            <div className={styles.tasks_container}>
+            {/* <div className={styles.tasks_container}>
                 {tasks.length === 0?
                     <div className={styles.no_tasks}>
                         <Notepad size={56} className={styles.notePad_logo}/>
@@ -28,7 +27,8 @@ export function TaskList(){
                     </div>:
                     <></>
                 }
-            </div>
+            </div> */}
+            <Task/>
         </section>
     );
 }

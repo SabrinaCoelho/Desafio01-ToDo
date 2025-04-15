@@ -1,0 +1,17 @@
+.wrapper{
+    color: var(--gray-100);
+    background: var(--gray-500);
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 0.875rem;
+    display: flex;
+    gap: 1rem;
+}
+.wrapper > input{
+    align-self: flex-start;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}

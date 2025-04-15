@@ -1,4 +1,4 @@
-header{
+.header{
     display: flex;
     background: var(--gray-700);
     justify-content: center;
@@ -11,11 +11,12 @@ header{
 .do{
     color: var(--purple-dark);
 }
-span{
+.header span{
     font-size: 2.5rem;
     font-weight: 900;
 }
 .header img{
     height: 2.25rem;
     margin-right: 0.75rem;
+    align-self: self-end;
 }

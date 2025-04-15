@@ -1,12 +1,18 @@
 import { Header } from "./components/Header";
+import styles from "./App.module.css";
 import "./global.css";
+import { TaskList } from "./components/TaskList";
+import { NewTask } from "./components/NewTask";
 
 function App() {
 
   return (
     <>
       <Header/>
-      <h1>Za warudo!</h1>
+      <main className={styles.wrapper}>
+        <NewTask />
+        <TaskList/>
+      </main>
     </>
   )
 }

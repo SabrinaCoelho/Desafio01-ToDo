@@ -1,0 +1,23 @@
+.tasks_status{
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tasks_status strong{
+    margin-right: 0.5rem;
+}
+.finished_tasks{
+    color: var(--purple);
+}
+.created_tasks{
+    color: var(--blue);
+}
+.tasks_count{
+    color: var(--gray-200);
+    font-weight: bold;
+    background: var(--gray-400);
+    padding: 1px 0.5rem ;
+    line-height: 0.875rem;
+    font-size: 0.75rem;
+    border-radius: 1rem;
+}

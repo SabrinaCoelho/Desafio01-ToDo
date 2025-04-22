@@ -50,7 +50,7 @@ export function TaskList(){
     }
 
     function addTask(newTask: Task){
-        setTasks([...tasks, newTask]);
+        setTasks((tasks: Task[]) => [...tasks, newTask]);
         setCreatedCount(prev => prev + 1);
     }
 
